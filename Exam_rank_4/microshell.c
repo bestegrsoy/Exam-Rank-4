@@ -55,6 +55,7 @@ int main(int ac, char **av, char **env)
         while (av[i] && av[++i])
         {
             av += i;
+            i = 0;
             while (av[i] && strcmp(av[i], "|") && strcmp(av[i], ";"))
                 i++;
             if (i)
